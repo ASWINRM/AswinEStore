@@ -1,0 +1,51 @@
+.goback {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+.wishtitle h1 {
+  font-size: 40px;
+  float: left;
+}
+
+.image {
+  height: 200px;
+  padding: 10px;
+}
+
+.cardbody {
+  display: flex;
+  flex-direction: row;
+}
+
+.cont {
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px 2px rgba(211, 211, 211, 0.445);
+  -moz-box-shadow: 0 0 5px 2px lightgray;
+}
+
+#bton {
+  margin: 10px;
+  width:200px
+}
+
+.contai {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.rows {
+
+  display: flex;
+  flex-direction: row;
+}

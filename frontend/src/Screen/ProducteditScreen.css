@@ -1,0 +1,27 @@
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.formcard {
+  margin: 10px;
+}
+
+.control {
+  width: 100%;
+  font-size: 15px;
+  background-color: #f2f4f2;
+  border-top-color: lightgray;
+  border-color: gray;
+  padding: 15px;
+}
+
+.form-group label p {
+  color: black;
+  font-size: 1.2em;
+  font-family: serif;
+}
+
+.formcard {
+  width: 550px;
+  align-self: center;
+}

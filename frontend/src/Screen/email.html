@@ -1,0 +1,36 @@
+
+const {
+    _id,name,email,Shippingaddres,orderItems,paymentmethod,taxprice,shippingprice,
+    Totalprice,paidAT,isPaid
+}=updatedorder
+<div>
+<h1> ORDER ID :${_id}</h1>
+<div>
+    Name:${name}
+    Email : ${email}
+    Address:<p><strong>${Shippingaddres.address},${Shippingaddres.city},
+                       ${Shippingaddres.postalcode},${Shippingaddres.country}</strong>
+             </p>
+</div>
+<div>
+    ${orderItems.map((item)=>{
+        <img  src=${item.image} ></img>
+        <p>${item.price}</p>
+    })}
+    <p>Amount : ${Totalprice}</p>
+</div>
+<div>
+    <strong>Payment Method : </strong><p>${paymentmethod}</p>
+    <strong>TotalPrice :</strong><p>${Totalprice}</p>
+    <strong>Shipping Price :</strong><p>${shippingprice}</p>
+    <strong>TaxPrice :</strong><p>${taxprice}</p>
+    <strog>Status :</strog><p>${isPaid?true:false}</p>
+    <strong>Paid At :</strong><p>${paidAT}</p>
+    <p>It will be delivered within 3 days</p>
+</div>
+<div>
+    <h1>Aswin-EStore</h1>
+    <h4>mail : aswinestroe@gmail.com</h4>
+    <h4>contact : 7868914174</h4>
+</div>
+</div>

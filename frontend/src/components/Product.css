@@ -1,0 +1,21 @@
+.Rupee {
+  color: black;
+  font-size: large;
+}
+
+.cardmedia {
+  height: 180px;
+}
+
+.product {
+  box-shadow: 0px 10px 15px black;
+}
+
+.MuiCardMedia-img {
+  size: 10px;
+}
+
+.brandlogo {
+  size: 20px;
+  border-radius: 50%;
+}

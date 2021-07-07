@@ -1,0 +1,48 @@
+#image {
+  width: 250px;
+  float: left;
+}
+
+.rows {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.labell {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  float: left;
+}
+
+.colls {
+  margin: 25px;
+}
+
+.cards {
+  width: 600px;
+  height: 600px;
+  margin-left: 20%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.control {
+  width: 100%;
+  font-size: 20px;
+  background-color: lightgray;
+  border-top-color: lightgray;
+  border: lightgray;
+  border-radius: 3px;
+}
+
+label {
+  float: left;
+}
+
+.returnmsg {
+  margin-left: 40px;
+}

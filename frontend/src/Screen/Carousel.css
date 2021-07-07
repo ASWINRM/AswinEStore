@@ -1,0 +1,46 @@
+
+.caros{
+   align-items: center;
+   bottom: 0%;
+   margin-top: 30px;
+   margin-left: 5px;
+   width:1300px;
+   height: 400px;
+   justify-content: center;
+    background-color: #343a40;
+    position: relative;
+}
+
+
+
+.carositem{
+    margin-right: 30%;
+    position: absolute;
+    align-items: center;
+    margin-left: 450px;
+}
+
+#carosimg{
+    margin-top: 30px;
+   
+    height: 280px;
+    width:400px
+}
+
+#Caption{
+    color:white;
+}
+
+#Caption h3{
+    color: white;
+}
+
+#Caption h5{
+    color: white;
+}
+
+#Caption{
+    width: 20px;
+   
+}
+

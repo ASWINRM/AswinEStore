@@ -1,0 +1,85 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personalinfo {
+  color: #292b2c;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 20px;
+}
+
+h1 {
+  align-items: flex-start;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.myorders {
+  color: #292b2c;
+}
+
+.rowprofile {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.rowprofile input {
+  font-size: 25px;
+
+  background-color: #e5e4e2;
+  border: #e5e4e2;
+}
+
+.rowprofile input:focus {
+  border: #e5e4e2;
+}
+
+.rowprofile input:active {
+  border: #e5e4e2;
+}
+
+.heading {
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.rowprofilebutton button {
+  width: 50%;
+  background-color: #292b2c;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.myorders {
+  margin: 20px;
+}
+
+.heading p {
+  color: blue;
+  cursor: pointer;
+}
+
+.rowprofilemodal {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.rowprofilemodal input {
+  font-size: 25px;
+
+  background-color: #e5e4e2;
+  border: #e5e4e2;
+}

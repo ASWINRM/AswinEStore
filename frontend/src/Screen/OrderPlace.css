@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+.placement {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeheading {
+  font-family: PatuaOne;
+  float: left;
+}
+
+.placeinfo {
+  font-family: DoHyeon;
+  float: left;
+}
+
+strong {
+  font-family: DoHyeon;
+  font-size: 18px;
+}
+
+.ordersum {
+  padding: 10px;
+  font-family: PatuaOne;
+}
+
+.orders {
+  display: flex;
+  flex-direction: row;
+}
+
+.ordersummary {
+  height: 580;
+  width: 450;
+}
+
+.orderdatas {
+  display: inline-flex;
+  flex-direction: column;
+  height: 70%;
+  width: 1000px;
+}

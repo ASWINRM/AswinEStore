@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "engines": {
+    "node": "13.14.0"
+  },
+  "description": "Aswin E-Store",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node data/server.js",
+    "data:import": "node Seeder",
+    "data:destroy": "node Seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false&&npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Aswin Kumarappa",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/lab": "*",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-fileupload": "^1.2.1",
+    "google-auth-library": "^7.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.12",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.7",
+    "otp-generator": "^2.0.1",
+    "stripe": "^8.156.0",
+    "uuid": "^8.3.2"
+  }
+}

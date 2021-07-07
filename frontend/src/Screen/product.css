@@ -1,0 +1,26 @@
+span{
+    margin: 2px;
+}
+
+.controlarea {
+    font-size: 20px;
+    background-color:		#DCDCDC;
+    border-top-color: 	#DCDCDC;
+    border-color: black;
+    border-radius: 3px;
+  }
+
+.allreviews{
+    margin: 40px;
+    float:left;
+    width:"500px";
+}
+
+.reviewcards{
+    width: 200px;
+}
+
+.reviewlist{
+    width: 1000 !important;
+    height: 100;
+}

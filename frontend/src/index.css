@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* main {
+  height: 780vh;
+} */
+
+.ml-auto {
+  left: 30%;
+}
+
+.Rupee {
+  color: black;
+  font-size: 30px;
+  font-family: NotoSerif;
+  margin: 1rem;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.Link {
+  list-style: none;
+}
+
+.quantity {
+  font-size: 20px;
+  font-family: "Mate+SC";
+}
+
+.form-control {
+  width: 25% !important;
+  height: 10px !important;
+}
+
+.btn-block {
+  align-items: center;
+  justify-content: center;
+}
+
+.Cartheading {
+  font-family: "LibreBaskerville";
+  margin: "20px";
+  font-size: "400px";
+  padding-top: 5%;
+}
+
+.subtotal {
+  font-family: "JosefinSans";
+  font-size: 30px;
+}
