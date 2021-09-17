@@ -33,7 +33,7 @@
     "nodemailer": "^6.6.1",
     "nodemon": "^2.0.7",
     "otp-generator": "^2.0.1",
-    "stripe": "^8.156.0",
+    "stripe": "^8.170.0",
     "uuid": "^8.3.2"
   }
 }
