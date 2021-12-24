@@ -7,7 +7,7 @@ import axios from 'axios'
 
 export const cartAddAction = (id, Qty) => async (dispatch, getState) => {
     console.log(CART_ADD_ITEMS)
-    const { data } = await axios.get(`http://localhost:5000/api/products/${id}`)
+    const { data } = await axios.get(`https://aswinestoreww.herokuapp.com/api/products/${id}`)
     if (data) {
         data.price = currencyconvertor(data, Qty)
     }

@@ -49,7 +49,7 @@ export const userloginaction = (email, password) => async (dispatch) => {
             }
         }
         console.log(email + " " + password)
-        const { data } = await axios.post('http://localhost:5000/api/user/login',
+        const { data } = await axios.post('https://aswinestoreww.herokuapp.com/api/user/login',
             { email, password }, config)
         console.log(data)
         if (data) {
@@ -83,7 +83,7 @@ export const usersignupaction = (name, email, password, tokenId) => async (dispa
         }
         console.log(name + " , " + email + " , " + password)
 
-        axios.post('http://localhost:5000/api/user/signup',
+        axios.post('https://aswinestoreww.herokuapp.com/api/user/signup',
             { name, email, password, tokenId }, config).then((e) => {
                 try {
 
@@ -145,7 +145,7 @@ export const userdetailaction = () => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.get("http://localhost:5000/api/user/profile", config)
+        const { data } = await axios.get("https://aswinestoreww.herokuapp.com/api/user/profile", config)
         console.log("userdetail " + data)
         if (data) {
             dispatch({ type: USER_DETAIL_SUCCESS, payload: data })
@@ -176,7 +176,7 @@ export const userPasswordCheck = (password) => async (dispatch, getState) => {
         }
         if (email && password) {
 
-            const { data } = await axios.post(`http://localhost:5000/api/user/passwordMatch`, { email, password }, config)
+            const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/user/passwordMatch`, { email, password }, config)
             console.log(data)
             if (data === true) {
                 dispatch({ type: USER_PASSWORD_SUCCESS, payload: data })
@@ -203,7 +203,7 @@ export const userupdateprofileaction = (user) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.put(`http://localhost:5000/api/user/profile`, { user }, config)
+        const { data } = await axios.put(`https://aswinestoreww.herokuapp.com/api/user/profile`, { user }, config)
 
         if (data) {
             dispatch({ type: USER_UPDATE_SUCCESS, payload: data })
@@ -226,7 +226,7 @@ export const googleloginaction = (tokenId, email, name) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/user/googlelogin`, { tokenId, email, name }, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/user/googlelogin`, { tokenId, email, name }, config)
         if (data) {
             dispatch({ type: GOOGLE_LOGIN_SUCCESS, payload: data })
             dispatch({ type: USER_LOGIN_SUCCESS, payload: data })
@@ -248,7 +248,7 @@ export const mailsentdaction = (email) => async (dispatch) => {
 
             }
         }
-        const { data } = await axios.post(`http://localhost:5000/api/user/forgotpassword`, { email }, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/user/forgotpassword`, { email }, config)
 
         if (data) {
             dispatch({ type: EMAIL_SEND_SUCCESS, payload: data })
@@ -270,7 +270,7 @@ export const OTPverifiedaction = (sentOTP, EnteredOTP) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/user/verified`, { sentOTP, EnteredOTP }, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/user/verified`, { sentOTP, EnteredOTP }, config)
 
         if (data) {
             dispatch({ type: CODE_VERIFY_SUCCESS, payload: data })
@@ -292,7 +292,7 @@ export const resetpasswordaction = (email, password) => async (dispatch) => {
         }
 
         if (email && password) {
-            const { data } = await axios.post(`http://localhost:5000/api/user/resetpassword`, { email, password }, config)
+            const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/user/resetpassword`, { email, password }, config)
 
             if (data) {
                 dispatch({ type: USER_RESETPASSWORD_SUCCESS, payload: { success: true } })
@@ -321,7 +321,7 @@ export const userlistaction = () => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.get(`http://localhost:5000/api/user/admin/userlist`, config)
+        const { data } = await axios.get(`https://aswinestoreww.herokuapp.com/api/user/admin/userlist`, config)
 
         if (data) {
             dispatch({ type: USERLIST_SUCCESS, payload: data })
@@ -346,7 +346,7 @@ export const userdeleteaction = (id) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/user/admin/delete`, { id }, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/user/admin/delete`, { id }, config)
 
         if (data) {
             dispatch({ type: USERDELETE_SUCCESS })

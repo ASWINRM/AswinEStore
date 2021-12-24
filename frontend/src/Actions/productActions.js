@@ -37,7 +37,7 @@ export const listproduct = () => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.get("http://localhost:5000/api/products/", config)
+        const { data } = await axios.get("https://aswinestoreww.herokuapp.com/api/products/", config)
         if (!data) {
             console.log("no data")
             console.log(data)
@@ -66,7 +66,7 @@ export const listdetailproduct = (id) => async (dispatch) => {
     try {
         dispatch({ type: PRODUCTS_DETAILS_REQUEST })
 
-        const { data } = await axios.get(`http://localhost:5000/api/products/${id}`)
+        const { data } = await axios.get(`https://aswinestoreww.herokuapp.com/api/products/${id}`)
         if (!data) {
             console.log("no data")
         }
@@ -102,7 +102,7 @@ export const editproductaction = ({ id, name, price, category, brand, image,
                 }
             }
 
-            const { data } = await axios.put(`http://localhost:5000/api/products/edit/product`, {
+            const { data } = await axios.put(`https://aswinestoreww.herokuapp.com/api/products/edit/product`, {
                 id, name, price, image, category, brand, numReviews, rating, countInstock
             }, config)
 
@@ -131,7 +131,7 @@ export const creteproductaction = ({ name, price, description, image, category, 
                 }
             }
             console.log(description)
-            const { data } = await axios.put(`http://localhost:5000/api/products/create`, {
+            const { data } = await axios.put(`https://aswinestoreww.herokuapp.com/api/products/create`, {
                 name, price, image, description, category, brand, numReviews, rating, countInstock
             }, config)
 
@@ -160,7 +160,7 @@ export const deleteproductaction = (id) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/products/delete`, { id }, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/products/delete`, { id }, config)
 
         if (data) {
             dispatch({ type: PRODUCT_DELETE_SUCCESS })
@@ -184,7 +184,7 @@ export const reviewaction = (id, review) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/products/review/${id}`, review, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/products/review/${id}`, review, config)
         console.log(data)
         if (data) {
             dispatch({ type: CREATE_REVIEW_SUCCESS })
@@ -210,7 +210,7 @@ export const reviewslistaction = (id) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.get(`http://localhost:5000/api/products/reviews/${id}`, config)
+        const { data } = await axios.get(`https://aswinestoreww.herokuapp.com/api/products/reviews/${id}`, config)
         if (data) {
             dispatch({ type: REVIEWS_LIST_SUCCESS, payload: data })
         }
@@ -230,7 +230,7 @@ export const topproductsaction = () => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/products/topproducts`, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/products/topproducts`, config)
 
         if (data) {
             console.log(data)

@@ -22,7 +22,7 @@ export const addwishaction = (product) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/wishlist/add`, product, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/wishlist/add`, product, config)
 
         if (data) {
             dispatch({ type: WISHLIST_ADD_SUCCESS, payload: data })
@@ -46,7 +46,7 @@ export const removewishaction = (product) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/wishlist/remove`, product, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/wishlist/remove`, product, config)
 
         if (data) {
             dispatch({ type: WISHLIST_REMOVE_SUCCESS, payload: data })

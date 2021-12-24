@@ -86,7 +86,7 @@ const OrderScreen = ({ match, history }) => {
         "Content-Type": "application/json"
       }
     }
-    const { data } = await axios.post(`http://localhost:5000/api/order/pay`, { token, price, name }, config)
+    const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/order/pay`, { token, price, name }, config)
     if (data) {
       console.log(data)
       setsdkReady(false)

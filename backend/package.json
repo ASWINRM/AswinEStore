@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "engines": {
-    "node": "13.14.0"
+    "node": "16.13.0"
   },
   "description": "Aswin E-Store",
   "main": "server.js",
@@ -10,9 +10,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node data/server.js",
+    "start": "node data/server.js",
     "data:import": "node Seeder",
-    "data:destroy": "node Seeder -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false&&npm install --prefix frontend && npm run build --prefix frontend"
+    "data:destroy": "node Seeder -d"
   },
   "author": "Aswin Kumarappa",
   "license": "ISC",

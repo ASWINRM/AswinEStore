@@ -24,7 +24,7 @@ export const orderplacementActions = (order) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/order/placement`, order, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/order/placement`, order, config)
 
         if (data) {
             dispatch({ type: ORDER_CREATE_SUCCESS, payload: data })
@@ -50,7 +50,7 @@ export const orderByIdAction = (id) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/order/orderDetails/${id}`, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/order/orderDetails/${id}`, config)
         console.log(data)
         if (data) {
             dispatch({ type: ORDER_BY_ID_SUCCESS, payload: data })
@@ -73,7 +73,7 @@ export const orderPaidaction = (id) => async (dispatch, getState) => {
                 "Content-Type": "application/json"
             }
         }
-        const { data } = await axios.post(`http://localhost:5000/api/order/orderDetails/paid/${id}`, { name, email }, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/order/orderDetails/paid/${id}`, { name, email }, config)
 
         if (data) {
             dispatch({ type: ORDER_PAY_SUCCESS, payload: data })
@@ -100,7 +100,7 @@ export const Myordersaction = () => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.get('http://localhost:5000/api/order/myorders', config)
+        const { data } = await axios.get('https://aswinestoreww.herokuapp.com/api/order/myorders', config)
         if (data) {
             dispatch({ type: MYORDERS_LIST_SUCCESS, payload: data })
         }
@@ -113,7 +113,7 @@ export const Myordersaction = () => async (dispatch, getState) => {
 
 export const ClientIdaction = () => async (dispatch) => {
 
-    const { data } = await axios.get(`http://localhost:5000/api/order/orderDetails/paypal`)
+    const { data } = await axios.get(`https://aswinestoreww.herokuapp.com/api/order/orderDetails/paypal`)
 
     dispatch({ type: CLIENT_ID, payload: data.ClientId })
 }
@@ -128,7 +128,7 @@ export const returnaction = (id, name) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/order/return/${id}`, { name: name }, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/order/return/${id}`, { name: name }, config)
         console.log(data)
         if (data) {
             dispatch({ type: RETURN_SUCCESS, payload: true })
@@ -152,7 +152,7 @@ export const orderslistaction = () => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/order/orders`, config)
+        const { data } = await axios.post(`https://aswinestoreww.herokuapp.com/api/order/orders`, config)
 
         if (data) {
             dispatch({ type: ORDERS_LIST_SUCCESS, payload: data })
@@ -177,7 +177,7 @@ export const orderdeliveraction = (id) => async (dispatch, getState) => {
             }
         }
 
-        const { data } = await axios.put(`http://localhost:5000/api/order/deliver`, { id }, config)
+        const { data } = await axios.put(`https://aswinestoreww.herokuapp.com/api/order/deliver`, { id }, config)
         if (data) {
             dispatch({ type: ORDER_DELIVER_SUCCESS })
         }

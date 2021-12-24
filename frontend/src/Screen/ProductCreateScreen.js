@@ -39,7 +39,7 @@ const CreateProductScreen = () => {
         }
       }
 
-      const { data } = await axios.post('http://localhost:5000/api/uploads/image', formdata, config)
+      const { data } = await axios.post('https://aswinestoreww.herokuapp.com/api/uploads/image', formdata, config)
       console.log(data)
 
       setimage(data)
