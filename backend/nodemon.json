@@ -1,0 +1,7 @@
+{
+    "env": {
+        "NODE_ENV":"production",
+        "url":"mongodb+srv://AswinRm:projects@cluster0.47e1x.mongodb.net/AswinEStore?retryWrites=true&w=majority",
+        "PORT":"5000"
+    }
+}

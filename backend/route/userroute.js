@@ -12,12 +12,7 @@ import crypto from 'crypto'
 
 router.post('/login',asynchandler(async (req,res)=>{
     const {email,password}=req.body
-
-    
-
-    
-
-        if(!email || !password){
+ if(!email || !password){
           res.status(401).send("provide both email and password")
         }
         console.log("userlogin")

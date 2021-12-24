@@ -1,9 +1,10 @@
 import mongoose from 'mongoose'
-
+import dotenv from 'dotenv';
+dotenv.config();
 const connectDB= async()=>{
 
     try{
-      const connect= await  mongoose.connect("mongodb://localhost:27017/Ecommerce-api",{
+      const connect= await  mongoose.connect(process.env.url,{
             useNewUrlParser:true,
             useUnifiedTopology:true,
             useCreateIndex:true
