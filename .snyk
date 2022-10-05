@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - heroku-cli > @heroku-cli/plugin-certs > lodash:
+        patched: '2022-10-05T15:42:21.610Z'
+    - heroku-cli > cli-ux > lodash:
+        patched: '2022-10-05T15:42:21.610Z'
+    - heroku-cli > @heroku-cli/plugin-pipelines > inquirer > lodash:
+        patched: '2022-10-05T15:42:21.610Z'
+    - heroku-cli > @heroku-cli/plugin-status > cli-ux > lodash:
+        patched: '2022-10-05T15:42:21.610Z'
+    - heroku-cli > @heroku-cli/plugin-ci > @heroku-cli/plugin-pipelines > inquirer > lodash:
+        patched: '2022-10-05T15:42:21.610Z'
