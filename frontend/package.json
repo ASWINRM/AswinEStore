@@ -16,7 +16,7 @@
     "axios": "^0.21.3",
     "bootstrap": "^5.0.1",
     "dotenv": "^8.2.0",
-    "google-auth-library": "^7.1.2",
+    "google-auth-library": "^9.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
