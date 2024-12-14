@@ -74,7 +74,7 @@
   "dotenv": "^8.6.0",
   
     
-  "express": "^4.17.1",
+  "express": "^4.21.2",
   
     
   "express-async-handler": "^1.1.4",
@@ -89,7 +89,7 @@
   "jsonwebtoken": "^8.5.1",
   
     
-  "mongoose": "^5.13.2",
+  "mongoose": "^8.8.3",
   
     
   "morgan": "^1.10.0",
