@@ -62,7 +62,7 @@
   "dependencies": {
   
     
-  "bcrypt": "^5.0.1",
+  "bcrypt": "^6.0.0",
   
     
   "bcryptjs": "^2.4.3",
@@ -80,7 +80,7 @@
   "express-async-handler": "^1.1.4",
   
     
-  "heroku": "^7.56.0",
+  "heroku": "^9.0.0",
   
     
   "heroku-cli": "^7.0.9",
